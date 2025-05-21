@@ -2,7 +2,8 @@
 
 ## 🔤 Hindi Transliteration using RNNs with Attention
 
-This project implements a neural transliteration system that converts Hindi words written in Latin script into the Devanagari script using Recurrent Neural Networks (RNNs). It explores the strengths and limitations of vanilla Seq2Seq models and how attention mechanisms improve performance on complex sequences.
+This project implements a neural transliteration system that converts Hindi words written in Latin script into the Devanagari script using Recurrent Neural Networks (RNNs). It explores the strengths and limitations of vanilla Seq2Seq models and how attention mechanisms improve performance on complex sequences.  
+wandb project report link: https://wandb.ai/saurabh541-indian-institute-of-technology-madras/transliteration_model-2/reports/Assignment-3--VmlldzoxMjg4MDE4Nw
 
 ---
 
