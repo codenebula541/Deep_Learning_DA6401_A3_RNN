@@ -69,7 +69,12 @@ wandb project report link: https://wandb.ai/saurabh541-indian-institute-of-techn
 ---
 
 ## 🚀 How to Run
-
+- To run the vanilla RNN use code at vanillaRnn.py directly. if you want to sweep the hyperparameters to get the best configuration run the cli in search mode else run it in default mode which will run a single time and it will use the default hyperparameter configuration set for best model. in this mode test data will also be tested and test accuracy will calculated.
+- To run the attention based model use code at attention.py. if you want to run in sweep mode to get the best hyperparameter then run cli in search mode else run it in best mode to run the model with default hyperparameter configuration.
+- before running the model, load the dataset at the respective places.
+- best parameter for attention based model is attached at file best_attention_model.pt. you can use these parameters on the test dataset.
+- to genrate the visualisation of the attention weights in attention based model run the code visualisation.py. but before that import all neccessary definitions from attention.py.
+- to generate the heatmap to see the intensity of latin character correspond to devanagri character, run the heatMap.py.
 -  Run the entire pipeline on [Kaggle Notebooks](https://www.kaggle.com)
 -  Log all runs and metrics to Weights & Biases
 -  Train using W&B Sweep with Bayesian Optimization
