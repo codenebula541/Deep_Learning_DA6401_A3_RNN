@@ -224,7 +224,7 @@ def stage_best(cfg):
         if vA > best_val_acc:
             best_val_acc = vA
             torch.save(model.state_dict(), best_model_path)
-            print(f"✅ Saved new best model at epoch {e} with val acc: {vA:.4f}")
+            print(f" Saved new best model at epoch {e} with val acc: {vA:.4f}")
 
     # Load best model before running on test data
     model.load_state_dict(torch.load(best_model_path))
@@ -232,7 +232,7 @@ def stage_best(cfg):
 
     sL, sA = T.eval_epoch(sl)
     wandb.log(prefixed({"test_loss": sL, "test_acc": sA}, pre))
-    print(f"✅ Final TEST acc = {sA:.4f}")
+    print(f" Final TEST acc = {sA:.4f}")
 
 
     # predictions + heatmap grid
