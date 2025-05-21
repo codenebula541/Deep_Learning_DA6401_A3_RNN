@@ -44,6 +44,8 @@ wandb project report link: https://wandb.ai/saurabh541-indian-institute-of-techn
 - Font support for Devanagari in visualizations
 - Automated hyperparameter search with Weights & Biases (W&B)
 - Word-level accuracy computation
+- all the prediction made by vanilla RNN and attention based model is attcahed at hi.test.pred _attention.tsv and hi.test.pred_vanilla_rnn.tsv
+  
 
 ---
 
@@ -55,6 +57,7 @@ wandb project report link: https://wandb.ai/saurabh541-indian-institute-of-techn
 | Attention-based   | **40.50%**    |
 
  **Insight:** Attention model improved accuracy by learning to focus on relevant input characters, especially for longer or ambiguous words.
+ - best model parameters for attenstion based model can be found at hi.test.pred _attention.tsv file
 
 ---
 
@@ -68,7 +71,7 @@ wandb project report link: https://wandb.ai/saurabh541-indian-institute-of-techn
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 - To run the vanilla RNN use code at vanillaRnn.py directly. if you want to sweep the hyperparameters to get the best configuration run the cli in search mode else run it in default mode which will run a single time and it will use the default hyperparameter configuration set for best model. in this mode test data will also be tested and test accuracy will calculated.
 - To run the attention based model use code at attention.py. if you want to run in sweep mode to get the best hyperparameter then run cli in search mode else run it in best mode to run the model with default hyperparameter configuration.
 - before running the model, load the dataset at the respective places.
